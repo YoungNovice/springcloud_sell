@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YoungNovice/config-repo.git
+          username: YoungNovice
+          password: qy0918yx
+          basedir: /Users/yangxuan/codespace/springcloud_sell/basedir_config
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+eureka:
+  client:
+    service-url:
+      default-Zone: http://localhost:8761/eureka/
+logging:
+  level:
+    root: info
+    org.mybatis: debug
+    java.sql: debug
+    org.springframework.web: trace
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

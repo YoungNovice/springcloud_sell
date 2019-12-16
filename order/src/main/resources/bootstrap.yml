@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5762
+    username: admin
+    password: admin
