@@ -3,9 +3,9 @@ spring:
     name: product
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: xuanyang
+    username: yangxuan
     password: 123456
-    url: jdbc:mysql://122.152.218.114/sell?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://139.9.1.152/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
 eureka:
