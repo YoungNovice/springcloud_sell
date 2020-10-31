@@ -1,5 +1,7 @@
 package com.imooc.order.controller;
 
+import com.imooc.order.client.ProductClient;
+import com.imooc.order.dto.CartDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -37,6 +39,8 @@ public class ClientController {
         // 第三种方式 这个restTemplate是用@LoadBalanced注解处理过的
 //        String forObject = restTemplate.getForObject("http://PRODUCT/msg", String.class);
 
-        return null;
+        return result;
     }
+
+
 }

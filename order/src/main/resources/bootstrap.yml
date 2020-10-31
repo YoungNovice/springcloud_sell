@@ -1,14 +1,18 @@
 spring:
+  datasource:
+    username: yangxuan
+    password: 123456
+    url: jdbc:mysql://139.9.1.152/sell?characterEncoding=utf-8&useSSL=false
   application:
     name: order
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIG
-      profile: dev
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5762
-    username: admin
-    password: admin
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: CONFIG
+#      profile: dev
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5762
+#    username: admin
+#    password: admin

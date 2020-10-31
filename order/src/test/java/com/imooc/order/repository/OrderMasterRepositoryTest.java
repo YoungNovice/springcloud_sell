@@ -25,12 +25,12 @@ public class OrderMasterRepositoryTest extends OrderApplicationTests {
         orderMaster.setBuyerName("杨帅帅");
         orderMaster.setBuyerPhone("13419523192");
         orderMaster.setBuyerOpenid("openid");
-        orderMaster.setOrderAmount(new BigDecimal(2.5));
+        orderMaster.setOrderAmount(new BigDecimal("2.5"));
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
 
         OrderMaster result = orderMasterRepository.save(orderMaster);
-        Assert.assertTrue(result != null);
+        Assert.assertNotNull(result);
     }
 
 }

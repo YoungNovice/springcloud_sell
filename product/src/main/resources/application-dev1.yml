@@ -1,0 +1,3 @@
+server:
+  port: 9080
+msg: dev1
